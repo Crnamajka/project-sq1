@@ -17,7 +17,7 @@
               </a>
             </div>
           </div>
-          <input
+          <input wire:model="email"
             type="text"
             name="email"
             id="email"
@@ -31,7 +31,7 @@
           </div>
           <div class="grid grid-cols-2 gap-x-[12px] gap-y-[14px]">
             <div class="relative flex items-center col-span-2">
-              <input
+              <input wire:model="country"
                 type="text"
                 name="country"
                 id="country"
@@ -42,14 +42,14 @@
                 <img src="/images/checkpage/despli.svg" alt="" />
               </span>
             </div>
-            <input
+            <input wire:model="firstName"
               type="text"
               name="firstName"
               id="firstName"
               placeholder="First Name"
               class="w-full font-[Poppins] text-zinc-500 border border-zinc-500 pl-5"
             />
-            <input
+            <input wire:model="lastName"
               type="text"
               name="lastName"
               id="lastName"
@@ -57,7 +57,7 @@
               class="w-full font-[Poppins] text-zinc-500 border border-zinc-500 pl-5"
             />
             <div class="col-span-2">
-              <input
+              <input wire:model="address"
                 type="text"
                 name="address"
                 id="address"
@@ -65,14 +65,14 @@
                 class="w-full  font-[Poppins] text-zinc-500 border border-zinc-500 pl-5"
               />
             </div>
-            <input
+            <input wire:model="city"
               type="text"
               name="city"
               id="city"
               placeholder="City"
               class="w-full font-[Poppins] text-zinc-500 border border-zinc-500 pl-5"
             />
-            <input
+            <input wire:model="postalCode"
               type="text"
               name="postalCode"
               id="postalCode"
@@ -144,7 +144,7 @@
               </div>
             </div>
           </div>
-          <button class="w-full bg-red-600 text-white font-[Poppins] py-2 border-0 mt-[24px] mb-[40px] h-[66px] shadow-md rounded">
+          <button wire:click="buy()" class="w-full bg-red-600 text-white font-[Poppins] py-2 border-0 mt-[24px] mb-[40px] h-[66px] shadow-md rounded">
             {{ __('Pay Now') }}
           </button>
           <footer class="text-center font-[Poppins] text-[12px] text-zinc-700">
